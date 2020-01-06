@@ -28,9 +28,8 @@ public class ApproveProcess {
 
 		/*
 		 * 使用zip文件发布流程
-		 * String barFileName = "path/to/process-one.bar"; ZipInputStream inputStream =
-		 * new ZipInputStream(new FileInputStream(barFileName));
-		 * 
+		 * String barFileName = "path/to/process-one.bar"; 
+		 * ZipInputStream inputStream = new ZipInputStream(new FileInputStream(barFileName));
 		 * repositoryService.createDeployment() .name("process-one.bar")
 		 * .addZipInputStream(inputStream) .deploy();
 		 */

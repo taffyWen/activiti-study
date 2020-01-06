@@ -14,9 +14,11 @@ import org.junit.Test;
  */
 public class TestActiviti {
 
+	//获取流程引擎
 	ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 
 	/**
+	 * 获取流程引擎
 	 * 使用代码创建23张表
 	 */
 	@Test
@@ -31,8 +33,7 @@ public class TestActiviti {
 		processEngineConfiguration.setJdbcPassword("521037");
 
 		// public static final String DB_SCHEMA_UPDATE_FALSE = "false";不能自动创建
-		// public static final String DB_SCHEMA_UPDATE_CREATE_DROP =
-		// "create-drop";先删除后创建
+		// public static final String DB_SCHEMA_UPDATE_CREATE_DROP = "create-drop";先删除后创建
 		// public static final String DB_SCHEMA_UPDATE_TRUE = "true"; 不存在就创建
 		processEngineConfiguration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
 		ProcessEngine buildProcessEngine = processEngineConfiguration.buildProcessEngine();
@@ -40,6 +41,7 @@ public class TestActiviti {
 	}
 
 	/**
+	 * 读取配置文件获取流程引擎
 	 * 使用配置文件创建23张表
 	 */
 	@Test
